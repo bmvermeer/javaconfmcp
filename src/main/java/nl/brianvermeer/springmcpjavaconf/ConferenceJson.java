@@ -1,4 +1,4 @@
-package nl.brianvermeer.springmcpjavaconf.javaconfereces;
+package nl.brianvermeer.springmcpjavaconf;
 
 public record ConferenceJson(
         String name,
