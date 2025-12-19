@@ -11,7 +11,7 @@ A Java Spring Boot-based Model Context Protocol (MCP) server that provides tools
 
 ## Installation
 
-### Using JBang (Recommended)
+### Using [[JBang](https://www.jbang.dev/) (Recommended)
 
 Configure in your MCP client (e.g., Cursor, Claude Desktop):
 
@@ -20,7 +20,7 @@ Configure in your MCP client (e.g., Cursor, Claude Desktop):
   "mcpServers": {
     "javaconf": {
       "command": "jbang",
-      "args": ["https://github.com/bmvermeer/spring-mcp-javaconf/releases/latest/download/javaconfmcp.jar"]
+      "args": ["javaconfmcp@bmvermeer/javaconfmcp"]
     }
   }
 }
@@ -28,7 +28,7 @@ Configure in your MCP client (e.g., Cursor, Claude Desktop):
 
 ### Using Java JAR
 
-If you prefer to build and run from a JAR:
+If you prefer to build and run from a JAR (requires Java 21):
 
 ```bash
 ./mvnw clean package
@@ -54,7 +54,4 @@ Then configure:
 - **`javaConf_get_openCfps`**: List conferences with open Call for Papers
 - **`javaConf_get_eventsInTimeframe`**: Get conferences within a date range (ISO-8601 LocalDateTime)
 
-## Requirements
 
-- Java 21 or higher
-- JBang (for JBang installation method)
